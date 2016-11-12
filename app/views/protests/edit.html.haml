@@ -2,7 +2,7 @@
 
 %h1 Edit Existing Protest
 
-= form_tag movie_path(@protest), :method => :put do
+= form_tag protest_path(@protest), :method => :put do
 
   = label :protest, :title, 'Title'
   = text_field :protest, 'title'
