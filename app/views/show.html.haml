@@ -1,0 +1,19 @@
+-# in app/views/protest/show.html.haml
+
+%h2 Details about #{@protest.title}
+
+%ul#details
+  %li
+    Protest Location:
+    = @protest.location
+  %li
+    Happening on:
+    = @protest.event_date.strftime("%B %d, %Y")
+
+%h3 Description:
+
+%p#description= @protest.description
+
+= link_to 'Edit', edit_protest_path(@protest)
+= button_to 'Delete', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
+= link_to 'Back to movie list', protests_path

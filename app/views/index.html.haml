@@ -1,0 +1,19 @@
+-#  This file is app/views/protest/index.html.haml
+%h1 All Protests
+
+%table#protests
+  %thead
+    %tr
+      %th{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
+      %th Rating
+      %th{:class => @date_header}= link_to 'Event Date', protests_path(:sort => 'event_date'), :id => 'event_date_header'
+      %th More Info
+  %tbody
+    - @protests.each do |protest|
+      %tr
+        %td= protest.title 
+        %td= protest.description
+        %td= protest.event_date
+        %td= link_to "More about #{protest.title}", protest_path(protest)
+
+= link_to 'Add new protest', new_protest_path
