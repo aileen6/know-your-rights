@@ -51,13 +51,12 @@
   %h3 Protest Location:
   %p#location= @protest.location
   %br
-  
   %h3 Date and Time:
-  = @protest.event_date.strftime("%B %d, %Y at %H:%M")
+  %p#date= @protest.event_date.strftime("%B %d, %Y at %H:%M")
 
 
 %head
-  %script{:src => "//maps.google.com/maps/api/js?v=AIzaSyDHDuR9mVRJ9RdnfALd3tISh7aWSfRxfBE"}
+  %script{:src => "//maps.google.com/maps/api/js?v=3.23&sensor=false&client=&key=&libraries=geometry&language=&hl=®ion="}
   %script{:src => "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"}
   %script{:src => "//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js", :type => "text/javascript"}
   :javascript
@@ -82,6 +81,7 @@
 %body{:align => "center" }
   #map_canvas
   .right-side{:style => "center, width:30%;"}
+  -if user_signed_in?
   = link_to 'Edit this event', edit_protest_path(@protest)
   = button_to 'Delete this event', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
   %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
