@@ -12,11 +12,12 @@
         %input.tftextinput{:maxlength => "120", :name => "q", :size => "21", :type => "text"}/
         %input.tfbutton{:type => "submit", :value => "search"}/
       .tfclear
+    = link_to image_tag "ucprotest.jpg", size: "836x467" 
     %h2 Find Protests 
     #menu
       %p
         %b Sort by:
-      %ul{:align => "center" }
+      %ul
         %li
           %a{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
         %li
