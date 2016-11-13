@@ -15,16 +15,15 @@
     #menu
       %p
         %b Sort by:
-      %div{:id =>"top-layer"}
-        %ul{:id =>"bottom-layer"}
-          %li
-            %a{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
-          %li
-            %a{:class => @title_header}= link_to 'Event Description', protests_path(:sort => 'description'), :id => 'description_header'
-          %li
-            %a{:class => @title_header}= link_to 'Event Date and Time', protests_path(:sort => 'event_date'), :id => 'event_date_header'
-          %li
-            %a{:class => @title_header}= link_to 'Event Location', protests_path(:sort => 'location'), :id => 'location_header'
+      %ul
+        %li
+          %a{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
+        %li
+          %a{:class => @title_header}= link_to 'Event Description', protests_path(:sort => 'description'), :id => 'description_header'
+        %li
+          %a{:class => @title_header}= link_to 'Event Date and Time', protests_path(:sort => 'event_date'), :id => 'event_date_header'
+        %li
+          %a{:class => @title_header}= link_to 'Event Location', protests_path(:sort => 'location'), :id => 'location_header'
 
 -if user_signed_in?
   = link_to 'Add new protest', new_protest_path

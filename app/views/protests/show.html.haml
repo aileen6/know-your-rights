@@ -31,16 +31,13 @@
       %p#description= @protest.description
       
       %p
-      Real location from Google maps here.
+      Maps need to show please.
       :javascript
         handler = Gmaps.build('Google');
         handler.buildMap({ internal: {id: 'basic_map' }});
       %div{:style => "width: 800px;"}
       #basic_map{:style => "width: 800px; height: 400px;"}
-      <div style='width: 800px;'>
-        <div id="multi_markers" style='width: 800px; height: 400px;'></div>
-      </div>
-
+      
       %p
       .right-side{:style => "width:30%;"}
         = link_to 'Edit', edit_protest_path(@protest)
