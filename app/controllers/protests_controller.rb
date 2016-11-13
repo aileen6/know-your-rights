@@ -5,9 +5,11 @@ class ProtestsController < ApplicationController
   def show
     id = params[:id] # retrieve movie ID from URI route
     @protest = Protest.find(id) # look up protest by unique ID
+    # @search = $client.search("#protest -rt", :lang => "en").take(5).collect 
   end
   
   def index
+    @protests = []
     sort = params[:sort] || session[:sort]
     case sort
     when 'title'

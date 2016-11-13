@@ -1,9 +1,10 @@
+// = stylesheet_link_tag "index"
 !!!
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Know Your Rights
-    %link{:href => "index.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/stylesheets/index.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
   %body
     #tfheader
       %h1 Know Your Rights
@@ -15,7 +16,7 @@
     #menu
       %p
         %b Sort by:
-      %ul
+      %ul{:align => "center" }
         %li
           %a{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
         %li
@@ -24,11 +25,11 @@
           %a{:class => @title_header}= link_to 'Event Date and Time', protests_path(:sort => 'event_date'), :id => 'event_date_header'
         %li
           %a{:class => @title_header}= link_to 'Event Location', protests_path(:sort => 'location'), :id => 'location_header'
-
+      
 -if user_signed_in?
   = link_to 'Add new protest', new_protest_path
 
-%table#protests{:border => 1, :width => "80%"}
+%table#protests{:border => 1, :width => "85%", :align => "center" }
   %thead
     %tr
       // %th{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
@@ -39,6 +40,7 @@
       // %th{:class => @date_header}= link_to 'Event Date', protests_path(:sort => 'event_date'), :id => 'event_date_header'
       %th More Info
   %tbody
+    %p
     - @protests.each do |protest|
       %tr
         %td= protest.title 

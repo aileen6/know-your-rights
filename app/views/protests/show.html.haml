@@ -1,3 +1,31 @@
+// %p
+//   - @search.each do |tweet|
+//     %tr
+//       %td= tweet.text
+//   end
+
+
+
+// %script{:src => "//maps.google.com/maps/api/js?v=3.23&sensor=AIzaSyDHDuR9mVRJ9RdnfALd3tISh7aWSfRxfBE"}
+// %script{:src => "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"}
+// %script{:src => "//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js", :type => "text/javascript"}
+
+// :javascript
+//   var handler = Gmaps.build('Google');
+//   handler.buildMap({ internal: {id: 'multi_markers'}}, function(){
+//     var markers = handler.addMarkers([
+//       { lat: 43, lng: 3.5},
+//       { lat: 45, lng: 4},
+//       { lat: 47, lng: 3.5},
+//       { lat: 49, lng: 4},
+//       { lat: 51, lng: 3.5}
+//     ]);
+//     handler.bounds.extendWith(markers);
+//     handler.fitMapToBounds();
+//   });
+
+
+
 !!!
 %html
   %head
@@ -12,43 +40,54 @@
         %input.tfbutton{:type => "submit", :value => "search"}/
       .tfclear
     
-    %div{:style => "width:100%;"}
-      .left-side{:style => "width:70%"}
-        %h2{:style => "padding:5px; font-size:18px; color:black"} Details about #{@protest.title}
-        %ul#details
-      %br
-      %br
-      %br
-        
-        Protest Location:
-        = @protest.location
-        %br
-        Happening on:
-        = @protest.event_date.strftime("%B %d, %Y")
-      
-      %h3 Description:
-      
-      %p#description= @protest.description
-      
-      %p
-      Maps need to show please.
-      :javascript
-        handler = Gmaps.build('Google');
-        handler.buildMap({ internal: {id: 'basic_map' }});
-      %div{:style => "width: 800px;"}
-      #basic_map{:style => "width: 800px; height: 400px;"}
-      
-      %p
-      .right-side{:style => "width:30%;"}
-        = link_to 'Edit', edit_protest_path(@protest)
-        = button_to 'Delete', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
-        = link_to 'Back to protest list', protests_path
-        %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
-        %p
-          Real time news feed from Twitter here.
-        %p
-    %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}
-    %img#profile-pic{:src => "https:"}/
+%div{:style => "width:100%;"}
+  .left-side{:style => "width:0%"}
+  %h2{:style => "padding:5px; font-size:18px; color:black"} Details about #{@protest.title}
+  %h3{:style => "padding:5px; font-size:18px; color:black"}= link_to 'Back to protest list', protests_path
 
+  %h3 Description:
+  %p#description= @protest.description
+  
+  Protest Location:
+  = @protest.location
+  %br
+  Happening on:
+  = @protest.event_date.strftime("%B %d, %Y at %H:%M")
+
+
+%head
+  %script{:src => "//maps.google.com/maps/api/js?v=AIzaSyDHDuR9mVRJ9RdnfALd3tISh7aWSfRxfBE"}
+  %script{:src => "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"}
+  %script{:src => "//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js", :type => "text/javascript"}
+  :javascript
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+            center: new google.maps.LatLng(37.8716, -122.2727),
+            zoom: 11,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    function addMarker(location) {
+        marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+%body{:align => "center" }
+  #map_canvas
+  .right-side{:style => "center, width:30%;"}
+  = link_to 'Edit this event', edit_protest_path(@protest)
+  = button_to 'Delete this event', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
+  %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
+  %p
+    Real time news feed from Twitter here.
+  %p
+  %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}
+ 
 
 

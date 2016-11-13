@@ -1,6 +1,6 @@
 body{
 	font-family: "Verdana";
-	background-color: #d9d09c;
+	background-color: #e6f9ff;
 
 }
 
@@ -94,6 +94,7 @@ table {
 
 p {
 	padding-bottom: -10px;
+	padding-left: 40px;
 }
 
 #top-layer {

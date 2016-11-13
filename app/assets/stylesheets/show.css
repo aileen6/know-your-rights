@@ -1,7 +1,6 @@
 body{
 	font-family: "Verdana";
-	background-color: #ececec;
-	color: gray;
+	background-color: #e6f9ff;
 }
 
 h1{
@@ -10,26 +9,19 @@ h1{
 	font-size:40px;
 	padding: 10px 20px 0px 20px;
 	font-family: "Verdana";
-
 }
-
 
 h2{
 	color: white;
 	font-family: "Verdana";
 	background-color: #a68ed4;
 	margin : 0px ;
-	margin-top: 25px
+	margin-top: 25px;
 	padding: 15px;
-	padding-left: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-a {
-	color: black;
-
-}
 
 #profile-pic {
 	max-width: 90px;
@@ -82,14 +74,27 @@ a {
 
 .left-side {
 	float: left;
+	padding-left: -15px;
+	padding-right: -28px;
+	padding-top: 20px;
 }
 
 .right-side {
 	float: right;
-	border: solid 1px black;
 	padding-left: -15px;
 	padding-right: -28px;
+	padding-top: 20px;
 }
 
+h3 {
+	padding:5px; 
+	font-size:18px; 
+	color:black;
+}
 
-
+#map_canvas {
+        width: 500px;
+        height: 400px;
+        margin-left:auto; 
+    	margin-right:auto;
+      }

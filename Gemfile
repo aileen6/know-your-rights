@@ -51,4 +51,6 @@ end
 gem 'devise', '~> 4.2'
 gem 'gmaps4rails'
 gem 'rails_12factor', group: :production
+gem 'twitter', '~> 5.11.0'
+gem 'dotenv', '~> 0.11.1'
 ruby "2.3.0"
