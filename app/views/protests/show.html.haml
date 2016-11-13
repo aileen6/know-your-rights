@@ -43,7 +43,7 @@
 %div{:style => "width:100%;"}
   .left-side{:style => "width:0%"}
   %h2{:style => "padding:5px; font-size:18px; color:black"} Details about #{@protest.title}
-  %h3{:style => "padding:5px; font-size:18px; color:black"}= link_to 'Back to protest list', protests_path
+  %h3{:style => "padding:5px; font-size:18px; color:black"}= link_to 'Back to home page', protests_path
 
   %h3 Description:
   %p#description= @protest.description
@@ -82,8 +82,8 @@
   #map_canvas
   .right-side{:style => "center, width:30%;"}
   -if user_signed_in?
-  = link_to 'Edit this event', edit_protest_path(@protest)
-  = button_to 'Delete this event', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
+    = link_to 'Edit this event', edit_protest_path(@protest)
+    = button_to 'Delete this event', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
   %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
   %p
     Real time news feed from Twitter here.
