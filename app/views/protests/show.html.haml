@@ -1,8 +1,4 @@
-%p
-  - @search.each do |tweet|
-    %tr
-      %td= tweet.text
-  end
+
 !!!
 %html
   %head
@@ -12,15 +8,16 @@
   %body
     #tfheader
       %h1 Know Your Rights
+      %h1{:style => "margin:0px;font-size:25px; color:white; center; font:Lucida Console"}An Organizer for Organizers
+      %h1{:style => "font-size:18px; color:white; center"}= link_to 'Back to home page', protests_path
       %form#tfnewsearch{:action => "http://www.google.com", :method => "get"}
         %input.tftextinput{:maxlength => "120", :name => "q", :size => "21", :type => "text"}/
         %input.tfbutton{:type => "submit", :value => "search"}/
       .tfclear
-    
+      
 %div{:style => "width:100%;"}
   .left-side{:style => "width:0%"}
-  %h2{:style => "padding:5px; font-size:18px; color:black"} Details about #{@protest.title}
-  %h3{:style => "padding:5px; font-size:18px; color:black"}= link_to 'Back to home page', protests_path
+  %h2{:style => "padding:10px; font-size:18px; color:black; center"} Details about #{@protest.title}
 
   %h3 Description:
   %p#description= @protest.description
@@ -205,27 +202,19 @@
   -if user_signed_in?
     = link_to 'Edit this event', edit_protest_path(@protest)
     = button_to 'Delete this event', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
-  %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
-  %p
-    Real time news feed from Twitter here.
+  %h2{:style => "padding:5px; font-size:18px; color:black"} Top Twitter Feed of #The Cause
   %div
   %marquee{:bgcolor => "#ffffff", :direction => "up", :loop => "-1", :onmouseout => "this.scrollAmount=2", :onmouseover => "this.scrollAmount=0", :scrollamount => "2", :width => "50%"}
     %center
-      %font{:color => "#000000", :size => "+1"} Cal 
       %p
-        %font{:color => "#000000", :size => "+1"} Hacks 3.0
-      %p
-        %font{:color => "#000000", :size => "+1"} is
-      %p
-        %font{:color => "#000000 ", :size => "+1"} the
-      %p
-        %font{:color => "#000000 ", :size => "+1"} way
-      %p
-        %font{:color => "#000000", :size => "+1"} to
-      %p
-        %font{:color => "#000000", :size => "+1"} go!
-  %p Want to know more about your rights? Get details at      
-  %link{:href => "https://www.aclunc.org/our-work/know-your-rights/free-speech-protests-demonstrations"}/
+      %font{:color => "#000000", :size => "+1"}
+      - @search.each do |tweet|
+        %tr
+          %td= tweet.text
+          %br
+          %br
+      
+
   %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}
  
 

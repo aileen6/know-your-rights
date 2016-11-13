@@ -1,10 +1,14 @@
 class ProtestsController < ApplicationController
 
-  before_filter :authenticate_user!, except: [ :index, :show, :googleVerify ]
+  before_filter :authenticate_user!, except: [ :index, :show, :googleVerify, :information ]
 
   def googleVerify
     # render "protests/googleVerify.html"
     render html: "google-site-verification: google27b5178361bfde3d.html"
+  end
+
+  def information
+    render :information
   end
 
   def show

@@ -5,15 +5,24 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Know Your Rights
     %link{:href => "/assets/stylesheets/index.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    
+    
   %body
     #tfheader
       %h1 Know Your Rights
+      %h1{:style => "margin:0px; padding-top: 1px; font-size:25px; color:white; center; font:Papyrus"}An Organizer for Organizers
+      %br
+      %li{:style => "margin:20px; font-size:15px; color:white"}= link_to 'Know Your Rights: Free Speech, Protests & Demonstrations', information_path
+      %br 
+      -if user_signed_in?
+        %li{:style => "margin:20px; font-size:15px; color:white"}= link_to 'Add new protest', new_protest_path
+      
       %form#tfnewsearch{:action => "http://www.google.com", :method => "get"}
         %input.tftextinput{:maxlength => "120", :name => "q", :size => "21", :type => "text"}/
         %input.tfbutton{:type => "submit", :value => "search"}/
       .tfclear
-    = link_to image_tag "ucprotest.jpg", size: "836x467" 
-    %h2 Find Protests 
+    = link_to image_tag "ucprotest.jpg", size:"1280x550"  
+    %h2 Find Protests
     #menu
       %p
         %b Sort by:
@@ -26,9 +35,8 @@
           %a{:class => @title_header}= link_to 'Event Date and Time', protests_path(:sort => 'event_date'), :id => 'event_date_header'
         %li
           %a{:class => @title_header}= link_to 'Event Location', protests_path(:sort => 'location'), :id => 'location_header'
-      
--if user_signed_in?
-  = link_to 'Add new protest', new_protest_path
+
+
 
 %table#protests{:border => 1, :width => "85%", :align => "center" }
   %thead
@@ -49,6 +57,9 @@
         %td= protest.location
         %td= protest.event_date
         %td= link_to "More about #{protest.title}", protest_path(protest)
+    %br
+    %br
+    %br
 
    
     // %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}

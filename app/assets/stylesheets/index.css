@@ -1,28 +1,29 @@
-
+@font-face {
+  font-family: "Pacifico";
+  src: url(/assets/fonts/Pacifico.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body{
-	font-family: "Verdana";
-	background-color: #e6f9ff;
+	font-family: "Times";
+	background-color: #ffffff;
 }
 
 h1{
+	font-family: "Pacifico";
 	color: white;
 	background-color: purple;
-	font-size:50px;
-	padding: 10px 20px 0px 20px;
-	font-family: "Verdana";
+	font-size:60px;
+	margin-bottom: 0px;
 }
 
 h2{
 	color: white;
-	font-family: "Verdana";
 	background-color: #a68ed4;
 	margin: 0px;
-	margin-top: 25px;
-	padding: 15px;
-	padding-left: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 0px;
+	padding: 0px;
 }
 
 a {
@@ -46,17 +47,14 @@ a {
 			padding-top: 0px;
 		}
 		.tftextinput{
-			margin: 0;
+			margin: 0px;
 			padding: 5px 25px;
-			font-family: Arial;
 			font-size:14px;
 			border:1px solid purple; border-right:0px;
-			
 		}
 		.tfbutton {
-			margin: 0;
 			padding: 5px 10px;
-			font-family: Arial, Helvetica, sans-serif;
+			margin: 0px;
 			font-size:14px;
 			color: white;
 			border: solid 2px black;
@@ -80,20 +78,20 @@ form {
 #menu {
 	color: black;
 	float: left;
-	padding-right: 200px;
+	padding-right: 400px;
 
 }
 
 
 table {
 	color: black ;
-	padding: 10px;
+	padding: 8px;
 
 }
 
 p {
 	padding-bottom: -10px;
-	padding-left: 50px;
+	padding-left: 40px;
 }
 
 #top-layer {

@@ -1,0 +1,246 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Know Your Rights
+    %link{:href => "/assets/stylesheets/index.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #tfheader
+      %h1 Know Your Rights
+      %h1{:style => "font-size:18px; color:white; center"}= link_to 'Back to home page', protests_path
+      %form#tfnewsearch{:action => "http://www.google.com", :method => "get"}
+        %input.tftextinput{:maxlength => "120", :name => "q", :size => "21", :type => "text"}/
+        %input.tfbutton{:type => "submit", :value => "search"}/
+      .tfclear
+    = link_to image_tag "ucprotest.jpg", size:"1280x650"  
+    %h2 Know Your Rights!
+    
+    %p
+      This page is adopted from #{ link_to 'Ruby', 'https://www.aclunc.org/our-work/know-your-rights/know-your-rights-your-right-demonstrate'} aclunc.org .
+    
+    .field.field-name-body.field-type-text-with-summary.field-label-hidden
+  .field-items
+    .field-item.even
+      %p You have the right to speak out. Both the California Constitution and the First Amendment to the United States Constitution protect your right to free expression. But there are many questions you face when you decide to organize and speak out. When do you need a police permit? Are there things you cannot say or do? Are there any limitations on when or where you can demonstrate? What about civil disobedience?
+      %p
+        %a{:href => "https://www.aclunc.org/our-work/know-your-rights/know-your-rights-your-right-demonstrate"} You might also want to print out this one-page PDF »
+      %h3 Civil disobedience on campus
+      %p
+        Are you a college student at a public university in California? This related 2-page Know Your Rights guide specifically addresses your right to practice civil disobedience on campus: 
+        %a{:href => "../../our-work/know-your-rights/civil-disobedience-public-universities", :style => "font-size: 13.0080003738403px; line-height: 1.538em;"} Civil Disobedience at Public Universities »
+      %h3 Three principles to remember
+      %p{:style => "font-weight: bold;"} 1. CONDUCT, NOT CONTENT
+      %p It's not what you say—it's the way that you say it. Your right to express your opinion is protected no matter what beliefs you hold. What matters is how you use that right. If you organize a protest that causes serious disruption, the government may be able to intervene. But with a few notable exceptions, nobody can restrict your rights simply because they don't like what you say.
+      %p{:style => "font-weight: bold;"} 2. FREE SPEECH IS FOR EVERYONE
+      %p Young or old; anarchist or evangelical; pacifist or hawk; Mormon or Muslim; these rights apply to you. It doesn't matter whether you're a U.S. citizen, whether you're of voting age, or whether you speak English. Free-speech rights are for everybody. Don't let anyone tell you otherwise.
+      %p{:style => "font-weight: bold;"} 3. WHEN, WHERE AND HOW
+      %p Consider when, where and how you use your free-speech rights. If you organize a rally that causes violence or unnecessary disruption, your event may be disbanded. Every municipality has regulations and it's your responsibility to understand them. You must observe reasonable regulations on time, place, and manner when you exercise your rights to demonstrate and protest.
+      %h3 About this guide
+      %p This guide is designed to answer common questions. 
+      %p{:style => "font-weight: bold;"} IT DOES:
+      %ul
+        %li Outline your free-speech rights under the U.S. and California constitutions;
+        %li Define the limits to your rights, including when speech may not be protected;
+        %li Outline the steps you may take to keep your demonstration lawful;
+        %li Give you the tools to recognize when your rights have been violated.
+      %p{:style => "font-weight: bold;"} IT DOES NOT: 
+      %ul
+        %li Advise on political strategy or on the nuts and bolts of how to organize a protest;
+        %li Provide specifics on local ordinances or on state laws outside California;
+        %li Replace legal counsel, should you be arrested, or believe your rights have been violated.
+      %h3 Can you say that?
+      %p{:style => "font-weight: bold;"} WHERE PROTECTIONS END
+      %p{:style => "font-weight: bold;"} Is all speech protected?
+      %p The First Amendment protects your right to express your opinion, even if it's unpopular. You may criticize the President, the Congress, or the chief of police without fear of retaliation. But this right doesn't extend to libel, slander, obscenity, "true threats," or speech that incites imminent violence or law-breaking. If you grab a megaphone during a riot and yell "shoot the cop" or "loot the shop," you may reasonably expect trouble.
+      %p{:style => "font-weight: bold;"} Can I talk about government overthrow or taking over the streets?
+      %p
+        Yes, for the most part. In the 1940s and '50s, suspected subversives or Communists were often charged with 'incitement to illegal activity' and convicted. Subsequent courts have interpreted the government's ability to prohibit speech as incitement more narrowly. The government can't stop you from talking generally about ideas or future events. But it may ban speech that’s "
+        %em> directed to inciting or producing
+         
+        %em
+          %strong> imminent 
+          lawless action and is 
+          %strong> likely 
+          to incite or produce such action.'
+      %p{:style => "font-weight: bold;"} What if others react violently to what I say?
+      %p You can't be held responsible for the way that counter-demonstrators or your own supporters react, as long as your words don't directly incite violence or law-breaking. It's the responsibility of the police to control the crowd.
+      %h3 Red tape: navigating the permit process
+      %p{:style => "font-weight: bold;"} PERMIT ORDINANCES
+      %p{:style => "font-weight: bold;"} When do I need a permit?
+      %p
+        Whether you're marching on city hall, holding a candlelight vigil, or rallying outside the statehouse or a private business, you should check your local permit ordinance before you put on your marching shoes and pull out the megaphone.
+        %br>/
+        While regulations vary, here are some guidelines:
+      %ul
+        %li The government can't prohibit marches on public sidewalks or streets, or rallies in most public parks or plazas. But it can often require a permit to regulate competing uses of the area and to ensure you respect reasonable time, place and manner restrictions.
+        %li You shouldn’t need a permit for demonstrations that don't "realistically present serious traffic, safety, and competing-use concerns beyond those presented on a daily basis by ordinary use of the streets and sidewalks." If you hold a small rally in a public park or march on on the sidewalk and obey traffic laws, you generally won’t need a permit.
+      %h3 When should I apply for my permit?
+      %p Most permit ordinances require that an application be submitted a few days in advance, so be sure to give officials sufficient notice. But advance notice periods should be days, not weeks, and there should be an exception to allow demonstrations in response to breaking news. Some activists have successfully challenged ordinances that fail to meet these standards.
+      %p{:style => "font-weight: bold;"} OVERBOARD ORDINANCES
+      %p{:style => "font-weight: bold;"} When is an ordinance invalid?
+      %p An ordinance is invalid if it's unreasonably or unnecessarily burdensome, if it prevents you from communicating your message, or if it's selectively enforced. Remember: the government can’t discriminate against you for the content of your speech. This means that city officials may not impose additional burdens or costs on you because your message is controversial.
+      %p{:style => "font-weight: bold;"} When can the city deny my permit?
+      %p A municipality must have precise and specific standards for denying a permit. An ordinance with no standards, or with vague standards such as "will not disturb others" or "in the public interest" or "in the interest of vehicular or pedestrian traffic safety" gives individual officials too much discretion. Such an ordinance is unconstitutional and you can't be lawfully punished for violating it. If the government denies you a permit for expressive activity, it should tell you why it has done so.
+      %p
+        %strong Can the city tell me to change my route?
+      %p
+        The government may impose 
+        %em> reasonable 
+        restrictions on the time, place, and manner of your event in order to reduce the amount of disruption it will cause. However, a demonstration should be allowed to take place within "sight and sound" of its intended audience. You can challenge efforts to re-route your march away from busy crowds or main streets or to dictate when it must start and end—because you can't communicate your message if there's nobody to hear it.
+      %p{:style => "font-weight: bold;"} What if past marches have turned violent?
+      %p The government can't deny a permit just because past demonstrations by your group or others ended in civil disobedience or a disorderly brawl. Likewise, officials can't ask you to promise that protesters will obey the law before agreeing to issue your permit.
+      %p{:style => "font-weight: bold;"} Can the city ask me to cover the costs of my protest?
+      %p Cities may charge for the actual costs of a demonstration, including the costs of processing permits, traffic control, certain narrow insurance requirements and some clean-up costs, but you may challenge excessive fees. Groups have successfully challenged burdensome fees by arguing that:
+      %ul
+        %li The fee or costs have been imposed or increased because the content of the event is controversial and may provoke counter-demonstrations or require more police;
+        %li The city's interests can be adequately protected without the fees;
+        %li The regulation doesn't include a waiver for groups that can’t afford the charges and have no other way to publicize their views; or
+        %li There's no justification for imposing liability on demonstrators because liability should
+      %p
+        You should consult an attorney or contact the 
+        %a{:href => "https://www.aclunc.org/help", :title => "Get help"}> ACLU's advice line
+        \. Although the ACLU cannot provide legal services to all callers, our civil liberties counselors, in consultation with our attorneys, can provide you with helpful information and referrals.
+      %h3 Speech plus: beyond the spoken word
+      %p{:style => "font-weight: bold;"} How much noise can I make?
+      %p
+        The answer varies from city to city but one general principle applies: 
+        %em> You may use amplification devices as long as your intent is to communicate your message, not to disturb the peace. 
+        The government may require permits for music, drums andloudspeakers, but ordinances should be narrowly tailored so that they prevent
+        %em>  
+        excessive noise without interfering with your free-speech rights. Check your local
+        %em>  
+        regulations. You may not need a permit to use a bullhorn or megaphone, but the
+        %em>  
+        government may ban noisy parties without a purpose, or sound that is "amplified toa loud and raucous volume."
+      %p{:style => "font-weight: bold;"} Can I stop people on the sidewalk?
+      %p
+        Yes. You have the right to approach 
+        %em> willing 
+        passersby to hand them a leaflet, engage them in conversation, or ask them to sign a petition. But you may not obstruct or harass passersby after they have informed you that they are not interested. You shouldn't need a permit to leaflet on public sidewalks, in parks or public plazas, or even to go door-to-door talking to people.
+      %p{:style => "font-weight: bold;"} Where can I solicit contributions?
+      %p The First Amendment protects your right to ask people for money. However, this right is more tightly regulated than other forms of speech since it's considered more disruptive, particularly if you are asking for people to give you money on the spot. The courts have ruled, for example, that you don't have a right to solicit money inside an airport terminal. Also, you may need a permit to solicit funds. Many localities also make it illegal for you to solicit funds at a house where "no solicitation" signs are posted. Check your local regulations to be sure, and remember: if an ordinance is unreasonably burdensome, or if it discriminates based on what you want to say, it may be unlawful.
+      %p{:style => "font-weight: bold;"} Can I set up a table to hold my literature or a chair so I can sit down?
+      %p The First Amendment protects your right to use a table or news rack to display materials, subject to the usual time, place and manner rules. People who have a physical condition that substantially limits their ability to stand have the right to sit down. In either case, the police can prohibit you from blocking the sidewalk.
+      %p{:style => "font-weight: bold;"} Can I burn the American flag as a sign of protest?
+      %p Yes. In 1989, a landmark U.S. Supreme Court case invalidated the federal Flag Protection Act, along with flag desecration laws in 48 states. A flag desecration amendment to the Constitution, which was recently proposed and is likely to surface again, would permit Congress to pass a law barring the desecration of the U.S. flag, but no such law is currently on the books.
+      %h3 From sit-ins to handcuffs: brushes with the law
+      %p
+        %em June 24, 1963. Demonstrators leave the First A.M.E. Church in downtown Los Angeles on their way to join a march of more than 1,000 people that culminated with a protest against school segregation in front of the Los Angeles Board of Education
+        %em building.
+      %p{:style => "font-weight: bold;"} CIVIL DISOBEDIENCE
+      %p{:style => "font-weight: bold;"} What if I'm planning civil disobedience?
+      %p Civil disobedience is the active refusal to comply with certain laws as a form of protest. If you're planning to block an intersection or lie down in the middle of the street, make sure you know your rights before you begin. Take time to familiarize yourself with the practical consequences of civil disobedience, and with the steps you can take to minimize your chances of an extended stay in jail:
+      %ul
+        %li Carry current identification. If you don't have ID, you may be taken to jail for a very minor offense instead of getting a ticket.
+        %li Familiarize yourself with "Your Rights on Arrest" below and make sure you understand the likely charges and court outcomes of your activity (see "What Can the Police Charge Me With" below).
+        %li Be aware of any consequences particular to you, such as:
+      %ul
+        %li If you're an undocumented immigrant, the government may communicate your arrest to the U.S. Immigration and Customs Enforcement, which could affect your immigration status and even result in your deportation.
+        %li California law prohibits most private employers from asking about arrests that did not result in a conviction. However, if you apply for a job in law enforcement, in another state, or with the federal government, you may be asked about arrests as well as convictions.
+        %li If there is a warrant out for your arrest, you may be held in custody.
+        %li
+          Learn about civil disobedience at
+          = succeed "." do
+            %a{:href => "https://www.aclunc.org/our-work/know-your-rights/civil-disobedience-public-universities", :title => "Civil Disobedience at Public Universities"} public California universities
+      %p{:style => "font-weight: bold;"} YOUR RIGHTS ON ARREST
+      %p{:style => "font-weight: bold;"} What should I expect if I'm arrested at a protest?
+      %p It depends what you're arrested for. Under California law there are three different types of offenses: infractions, such as jaywalking or failing to yield to traffic in the street; misdemeanors, such as obstructing an officer or disturbing the peace; and felonies, such as assaulting an officer, freeing a prisoner, or vandalism causing more than $400 in damage.
+      %p{:style => "font-weight: bold;"} Infractions
+      %p For almost all infractions, if you can show a government issued ID, the police must give you a ticket (formally known as a "promise to appear") and release you on the spot unless you refuse to sign the ticket. 
+      %p{:style => "font-weight: bold;"} Misdemeanors
+      %p The police will usually take you to the station to be fingerprinted and photographed, but they should release you if you have identification and you sign a promise to appear. One exception to this rule is if the officer has reason to think that you will resume breaking the law if you're released.
+      %p{:style => "font-weight: bold;"} Felonies
+      %p The police may keep you in jail, but you have a right to bail immediately. If you don't bail out, within 48 hours a judge will review the police reports to see whether they show any criminal act. You must be seen in court within two business days to be informed as to whether you're being charged with a crime.
+      %p
+        Many people arrested at protests are never charged and are released without going to court. 
+        %em> If you aren't ever charged, you haven't technically been arrested. 
+        The police department should issue you a certificate saying you were merely detained.
+      %p If you're arrested in a federal facility or national park, or in some other situation where federal law applies, the process will be different.
+      %p
+        %strong What can the police charge me with?
+      %p Even if you view your expressive activity as lawful, there's a chance that the police will regard it as over the line. So, whether you're planning to engage in civil disobedience or not, you should be familiar with the California statutes most often invoked against demonstrators:
+      %ul
+        %li Resisting arrest or delaying a peace officer (Penal Code Section 148)
+        %li Disrupting a public meeting (Penal Code Section 403)
+        %li Riot and unlawful assembly (Penal Code Sections 404-408)
+        %li Failure to disperse (Penal Code Sections 409)
+        %li Disturbing the peace (Penal Code Section 415)
+        %li Trespassing (Penal Code Section 602)
+        %li Refusing to obey a peace officer who is enforcing the Vehicle Code (Vehicle Code Section 2800(a))
+        %li Attempting to free a person who has just been arrested (Penal Code Section 405a)
+        %li Using force, a threat of force, or physical obstruction to interfere with a person’s right to reproductive health services or to attend a place of religious worship (18.U.S.C. § 248)
+      %p{:style => "font-weight: bold;"} Know your rights:
+      %ul
+        %li You have the right to remain silent. Use it. You must give your name and address but don't say anything else.
+        %li You have the right to legal counsel. Ask for an attorney. Don't discuss your case with the police without consulting your attorney.
+        %li You have the right to make three free local phone calls immediately after being booked and no later than three hours after arrest. A parent with custody of a minor child may make two additional calls to arrange for childcare.
+        %li If you remain in custody, a judge will review your case within 48 hours and you must be taken to court within two business days.
+      %p{:style => "font-weight: bold;"} LIMITS TO POLICE POWER
+      %p{:style => "font-weight: bold;"} When can the police break up a protest or demonstration?
+      %p The police are charged with safeguarding the public during a demonstration, but they can't use their powers to stop you from exercising your free-speech rights. As long as you're observing reasonable time, place and manner restrictions, the police may not break up a gathering unless there is a "clear and present danger of riot, disorder, interference with traffic upon the public streets, or other immediate threat to public safety . . . ." And police officers may not use their powers in a way that has a "chilling effect" on ordinary people who wish to express their views.
+      %p{:style => "font-weight: bold;"} When can the police use force? How much force is legitimate?
+      %p The police may use reasonable force to break up a gathering or to detain or arrest a person who is violating the law. What is "reasonable" depends on all the circumstances. This gives the police some leeway while prohibiting force that any trained officer should know is excessive.
+      %p{:style => "font-weight: bold;"} Are there constitutional limits to police intelligence–gathering and surveillance of political activists?
+      %p Overly intrusive and unnecessary police spying and intelligence gathering activities may violate constitutional guarantees of freedom of speech or privacy if it is targeting groups or individuals engaged in First Amendment activity absent some connection to suspected criminal activity. In 2003, Attorney General Bill Lockyer issued a manual entitled "Criminal Intelligence Systems: A California Perspective," adopting a position that the ACLU has advocated in the courts and to local government bodies: the state constitutional right to privacy requires that the police need an articulable criminal predicate to justify surveillance or intelligence gathering, particularly of groups or individuals engaged in expressive activities
+      %p{:style => "font-weight: bold;"} Can uniformed officers take photographs or gather information at a protest?
+      %p Yes. The police may lawfully photograph or videotape events that are open to the public. However, California's right to privacy prohibits state and local officials from maintaining unnecessary information about the people of our state, so tapes that do not show any unlawful conduct should be destroyed.
+      %p{:style => "font-weight: bold;"} Can the police demand that protesters remain inside a 'free-speech zone'?
+      %p Sometimes. For the government to restrict protesters to a certain space—or to keep them from a space that’s otherwise open—it must follow the usual rules regarding time, place and manner: Restrictions must be reasonably related to legitimate goals such as reducing an identifiable security risk, they mustn't prevent substantially more expression than is necessary to achieve those goals, and they mustn't be motivated by the protesters' message. The restrictions must also allow protesters to have a reasonable opportunity to effectively communicate their message to their intended audience.
+      %h3 Location
+      %p{:style => "font-weight: bold;"} PUBLIC PROPERTY
+      %p{:style => "font-weight: bold;"} What's the best location for my free-speech activity?
+      %p Although the First Amendment gives you the right to decide where best to express yourself, your right to exercise your free-speech rights may hinge upon exactly where you choose to exercise those rights. The U.S. Supreme Court uses a Federal Forum Analysis to determine what kinds of speech are appropriate in which publicly owned locations:
+      %p Traditional Public Forums: Is it a sidewalk, a street or a public park? If the answer is yes, you're holding your protest at a traditional public forum, where speech may only be restricted through reasonable time, place and manner restrictions.
+      %p Designated Public Forums: Other spaces may receive the same protection as traditional forums because the government has opened them up to be used for speech activities. Once the government treats a public venue as available to some for non-commercial speech, it must be made available to all. Common examples of designated public forums include public auditoriums, the steps of city hall and plazas in front of public buildings.
+      %p Non-Public Forums: In other venues, your rights are less clearly protected. At military bases, airport terminals, or the entrance to a post office, for example, reasonable prohibitions and restrictions may be upheld, as long as they are objectively applied and do not favor one side of an issue over the other. The government cannot discriminate based on viewpoint, even in a non-public forum.
+      %p{:style => "font-weight: bold;"} How are Free Speech Locations Assessed under State Law?
+      %p California courts sometimes use the federal forum analysis to evaluate limits on speech on public property, but they have also used another test—the "basic incompatibility" test. Under that test, expressive activity on government property may only be prohibited if the speech is incompatible with the normal activity of the venue. What does that mean in the real world? It means leafleting at a train station or a prison parking lot may be approved, while forcing nurses to weave around solicitors inside a hospital ward will not be. Relevance matters, too: the courts are more likely to give the nod to a location when it is an actual or symbolic target of your protest.
+      %p{:style => "font-weight: bold;"} SCHOOLS, UNIVERSITIES, MEDICAL CENTERS AND HOUSES OF WORSHIP
+      %p{:style => "font-weight: bold;"} Can public universities or college campuses restrict protests?
+      %p
+        You should be allowed to protest on the outdoor streets and plazas of public college and university campuses, subject to reasonable time, place, or manner restrictions. A public college cannot allow protests on one side of an issue but prohibit protests on the other side. But it may restrict speech activities that unduly interfere with classes.
+        %a{:href => "https://www.aclunc.org/our-work/know-your-rights/civil-disobedience-public-universities", :title => "Civil Disobedience at Public Universities"} Learn more »
+      %p{:style => "font-weight: bold;"} Can my high school restrict my free-speech rights?
+      %p In California, your free-speech rights are fully protected in school, as well as outside. Your school may not censor or punish you because of the content of your speech—unless what you say is obscene, libelous, likely to incite material disruption or violation of school rules, or is deemed a "true threat." Schools may not stop you from discussing a controversial topic, writing for the school newspaper or criticizing school rules, but they can require you to obey reasonable, non-content-based regulations. A school can't ban a T-shirt that reads "No War in Iraq" but allow one that says "Support Our Troops," for example.
+      %p{:style => "font-weight: bold;"} Can I organize a protest at my school?
+      %p Yes. However, the school may require you to observe reasonable time, place and manner regulations, such as holding your protest before or after class, and in a safe location that doesn't block entries and exits.
+      %p{:style => "font-weight: bold;"} Can I skip school for a walkout or protest?
+      %p
+        Since the law requires you to attend school, you may be punished for skipping class. The school can't punish you for your views, however, and the consequences should be the same as if you skipped school for any other unauthorized reason. To learn about your rights at school, call your school district and ask for their regulations on free-speech activity, or visit the website of the ACLU in your area:
+        %a{:href => "http://www.aclunc.org"} www.aclunc.org
+        (Northern California), aclu-sc.org (Southern California) or aclusandiego.org (San Diego).
+      %p{:style => "font-weight: bold;"} Are there special rules for medical centers or places of worship?
+      %p Yes. You may not physically obstruct or intentionally interfere with the staff members, patients, or building of a medical clinic offering reproductive health services. These statutes also apply to houses of worship. In addition, some cities have "bubble ordinances" that bar demonstrators from approaching patients without permission within 100 feet of a health care facility. Check your local regulations to learn more.
+      %p{:style => "font-weight: bold;"} PRIVATE PROPERTY
+      %p{:style => "font-weight: bold;"} Can I protest on private property?
+      %p As a rule, the First Amendment doesn't give you the right to engage in free-speech activities on private property unless you own or lease the property, or the owner has given you permission to use the property for speech. But you may canvass door-to-door in residential areas, unless the homeowner has put up a "no solicitors" sign.
+      %p{:style => "font-weight: bold;"} Do shopping malls count as private property?
+      %p
+        Shopping malls are an exception to the rule. In California, the courts recognize big malls as the modern-day "functional equivalent" of a traditional public gathering place, because they have "common areas that would invite the public to meet, congregate, or engage in other activities typical of a public forum. . . ."
+        %br>/
+        The California Constitution does protect your free-speech rights in privately owned shopping centers—as long as your activity doesn’t interfere with the primary commercial purpose of the mall.
+      %p{:style => "font-weight: bold;"} What about the private walkways and parking lots in front of "big box" stores and hotels?
+      %p The shopping center rule doesn't apply to private property areas that fail the "functional equivalent" test, such as parking lots and walkways of medical office buildings and hotels, or private walkways and parking lots in front of freestanding stores like Trader Joe's or Costco.
+      %p{:style => "font-weight: bold;"} Can shopping centers regulate my expressive activities?
+      %p Yes. The courts have approved a slew of "reasonable" time, manner and place regulations, some of which present obstacles for effective communication. Most large malls have rules restricting free speech activities, although the California Supreme Court's recent decision in Fashion Valley Mall v. N.RB calls into question some of these restrictions. The Court invalidated a rule that prohibited a union from handing out leaflets at a San Diego mall calling for a boycott of a particular store, finding that the union's interest in getting its message across outweighed the economic interests of the mall.
+      %p{:style => "font-weight: bold;"} What if I violate a shopping center's rules?
+      %p
+        If you exercise your free-speech rights in violation of these rules, you may be excluded from the mall. However, you should not be arrested for trespass under state law in an area that's open to the public unless you intentionally interfere with the establishment’s business, for example, by obstructing or intimidating its
+        %br>/
+        customers.
+      %h3 Restrictions in shopping centers
+      %p The courts have made it clear that shopping centers can and should adopt written "reasonable" rules and regulations for free speech activity. Most large shopping malls have adopted a set of written regulations, which are available at the center's offices. The standard for what is a "reasonable" shopping center rule is the same as the standard for the government regulating speech in a public forum—the rule must be content-neutral and narrowly tailored and leave open alternative avenues of communication.
+      %p The court decisions applying this standard have not been consistent, so the state of the law is unclear at this time. Many of the large shopping centers adopted rules that were complicated and burdensome to advocacy groups, but many of these rules were upheld in state court decisions. Such rules included:
+      %ul
+        %li Requiring a permit in advance to give the center prior notice of the activity
+        %li Limiting free speech activity to designated free speech areas (usually 2 or 3)
+        %li Imposing strict limits on the number of participants (usually 2 or 3)
+        %li Requiring advance approval of signs and literature
+        %li Prohibiting all free speech activity during certain busy periods (e.g. Thanksgiving to Christmas)
+        %li Prohibiting direct solicitation of any monetary donations
+      %p A more recent federal court decision, relying on the California Supreme Court's ruling in the Fashion Valley case, rejected the reasoning of these state court decisions, thus calling into question many of these same rules. The court specifically rejected the following rules as either impermissible content discrimination or as not narrowly tailored.
+      %ul
+        %li Prohibition on speech activities that identify or single out the mall or a mall tenant by name (e.g. content-based)
+        %li Prohibition on the carrying or wearing of signs, including picket signs
+        %li Prohibition on any activity on the exterior walkways
+        %li Ban on activities during holiday periods

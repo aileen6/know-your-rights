@@ -1,0 +1,45 @@
+body{
+	font-family: "Verdana";
+	background-color: #ffffff;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+h1{
+	color: white;
+	background-color: purple;
+	font-size:50px;
+	padding: 10px 20px 0px 20px;
+	font-family: "Verdana";
+}
+
+h2{
+	color: white;
+	font-family: "Verdana";
+	background-color: #a68ed4;
+	margin : 0px ;
+	margin-top: 25px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align:center;
+}
+
+#profile-pic {
+	max-width: 90px;
+	margin : 10px ;
+}
+
+#menu {
+	color: black;
+	float: left;
+	padding-left: 64px
+
+h3 {
+	padding:5px; 
+	font-size:18px; 
+	color:black;
+	text-align:center;
+}
+
+
