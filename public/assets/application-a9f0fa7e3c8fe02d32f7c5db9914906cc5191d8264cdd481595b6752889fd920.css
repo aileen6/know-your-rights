@@ -1,0 +1,234 @@
+head{
+	background-image: url(.../images/ucprotest.jpg); 
+    width: 100%; 
+    height: auto;
+}
+
+
+body{
+	font-family: "Verdana";
+	background-color: #e6f9ff;
+}
+
+h1{
+	color: white;
+	background-color: purple;
+	font-size:50px;
+	padding: 10px 20px 0px 20px;
+	font-family: "Verdana";
+}
+
+h2{
+	color: white;
+	font-family: "Verdana";
+	background-color: #a68ed4;
+	margin: 0px;
+	margin-top: 25px;
+	padding: 15px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a {
+	color: black;
+
+}
+
+#profile-pic {
+	max-width: 90px;
+	margin : 10px ;
+
+}
+
+
+#tfheader{
+			background-color: purple;
+		}
+		#tfnewsearch{
+			float:right;
+			padding:10px;
+			padding-top: 0px;
+		}
+		.tftextinput{
+			margin: 0;
+			padding: 5px 25px;
+			font-family: Arial;
+			font-size:14px;
+			border:1px solid purple; border-right:0px;
+			
+		}
+		.tfbutton {
+			margin: 0;
+			padding: 5px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:14px;
+			color: white;
+			border: solid 2px black;
+			background: #8565c4;
+			
+		}
+		.tfbutton:hover {
+			background: #8565c4;
+		}
+		
+		.tfclear{
+			clear:both;
+		}
+form {
+	color:black;
+	padding-top: 20px;
+	
+}
+
+
+#menu {
+	color: black;
+	float: left;
+	padding-right: 200px;
+
+}
+
+
+table {
+	color: black ;
+	padding: 10px;
+
+}
+
+p {
+	padding-bottom: -10px;
+	padding-left: 50px;
+}
+
+#top-layer {
+    float:left; 
+}
+
+#bottom-layer { 
+	 float:left; 
+}
+
+li {
+	display: inline;
+}
+body{
+	font-family: "Verdana";
+	background-color: #e6f9ff;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+h1{
+	color: white;
+	background-color: purple;
+	font-size:50px;
+	padding: 10px 20px 0px 20px;
+	font-family: "Verdana";
+}
+
+h2{
+	color: white;
+	font-family: "Verdana";
+	background-color: #a68ed4;
+	margin : 0px ;
+	margin-top: 25px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align:center;
+}
+
+#profile-pic {
+	max-width: 90px;
+	margin : 10px ;
+}
+
+
+#tfheader{
+			background-color: purple;
+		}
+		#tfnewsearch{
+			float:right;
+			padding:10px;
+			padding-top: 1px;
+		}
+		.tftextinput{
+			margin: 0;
+			padding: 5px 25px;
+			font-family: Arial;
+			font-size:14px;
+			border:1px solid purple; border-right:0px;
+			
+		}
+		.tfbutton {
+			margin: 0;
+			padding: 5px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:14px;
+			color: white;
+			border: solid 2px black;
+			background: #8565c4
+			
+		}
+		.tfbutton:hover {
+			background: #8565c4
+		}
+		
+		.tfclear{
+			clear:both;
+		}
+
+
+#menu {
+	color: black;
+	float: left;
+	padding-left: 64px
+
+}
+
+.left-side {
+	float: left;
+	padding-left: -15px;
+	padding-right: -28px;
+	padding-top: 20px;
+}
+
+.right-side {
+	float: right;
+	padding-left: -15px;
+	padding-right: -28px;
+	padding-top: 20px;
+}
+
+h3 {
+	padding:5px; 
+	font-size:18px; 
+	color:black;
+	text-align:center;
+}
+
+#map_canvas {
+        width: 500px;
+        height: 400px;
+        margin-left:auto; 
+    	margin-right:auto;
+      }
+      
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
