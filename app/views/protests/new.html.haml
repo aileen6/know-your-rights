@@ -1,0 +1,17 @@
+%h1 Create New Protest
+
+= form_tag protests_path do
+
+  = label :protest, :title, 'Title'
+  = text_field :protest, 'title'
+
+  = label :protest, :description, 'Description'
+  = text_field :protest, 'description'
+  
+  = label :protest, :location, 'Location'
+  = text_field :protest, 'location'
+
+  = label :protest, :event_date, 'Event happening on'
+  = date_select :protest, :event_date
+
+  = submit_tag 'Save Changes'
