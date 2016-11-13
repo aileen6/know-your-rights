@@ -8,7 +8,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Know Your Rights
-    %link{ :rel => "stylesheet", :href => "/css/show.css" }
+    %link{:href => "/assets/stylesheets/show.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
   %body
     #tfheader
       %h1 Know Your Rights
@@ -54,7 +54,12 @@
     }
 
 %body{:align => "center" }
+  // %body{:onload => "initialize()"}
+
+
   #map_canvas
+  
+  
   .right-side{:style => "center, width:30%;"}
   -if user_signed_in?
     = link_to 'Edit this event', edit_protest_path(@protest)

@@ -25,6 +25,13 @@ h2{
 }
 
 
+
+.head {
+    background-image: url('../images/ucprotest.jpg'); 
+    width: 100%; 
+    height: auto;
+}
+
 #profile-pic {
 	max-width: 90px;
 	margin : 10px ;
