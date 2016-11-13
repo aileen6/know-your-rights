@@ -8,11 +8,11 @@ Dotenv.load
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-require 'dotenv/tasks'
+# require 'dotenv/tasks'
 
-task :mytask => :dotenv do
-    # things that require .env
-end
+# task :mytask => :dotenv do
+#     # things that require .env
+# end
 
 module Workspace
   class Application < Rails::Application
