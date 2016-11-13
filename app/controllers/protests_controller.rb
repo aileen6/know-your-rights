@@ -1,22 +1,25 @@
 class ProtestsController < ApplicationController
 
+  before_filter :authenticate_user!, except: [ :index, :show ]
+
   def show
     id = params[:id] # retrieve movie ID from URI route
     @protest = Protest.find(id) # look up protest by unique ID
   end
   
-
-
   def index
-    # sort = params[:sort] || session[:sort]
-    # case sort
-    # when 'title'
-    #   ordering,@title_header = {:title => :asc}, 'hilite'
-    # when 'event_date'
-    #   ordering,@date_header = {:event_date => :asc}, 'hilite'
-    # end
-    # @protests = [Protest.create(:title => 'BLM', :location => 'Oakland', :description => 'This is a protest')]
-    @protests = Protest.all
+    sort = params[:sort] || session[:sort]
+    case sort
+    when 'title'
+      ordering,@title_header = {:title => :asc}, 'hilite'
+    when 'description'
+      ordering,@description_header = {:description => :asc}, 'hilite'
+    when 'event_date'
+      ordering,@date_header = {:event_date => :asc}, 'hilite'
+    when 'location'
+      ordering,@location_header = {:location => :asc}, 'hilite'
+    end
+    @protests = Protest.all.order(ordering)
   end
 
   def new

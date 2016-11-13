@@ -1,19 +1,51 @@
--# in app/views/protest/show.html.haml
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Know Your Rights
+    %link{:href => "stylesheet2.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #tfheader
+      %h1 Know Your Rights
+      %form#tfnewsearch{:action => "http://www.google.com", :method => "get"}
+        %input.tftextinput{:maxlength => "120", :name => "q", :size => "21", :type => "text"}/
+        %input.tfbutton{:type => "submit", :value => "search"}/
+      .tfclear
+    
+    %div{:style => "width:100%;"}
+      .left-side{:style => "width:70%"}
+        %h2{:style => "padding:5px; font-size:18px; color:black"} Details about #{@protest.title}
+        %ul#details
+      %br
+      %br
+      %br
+        
+        Protest Location:
+        = @protest.location
+        %br
+        Happening on:
+        = @protest.event_date.strftime("%B %d, %Y")
+      
+      %h3 Description:
+      
+      %p#description= @protest.description
+      
+      %p
+        Real location from Google maps here.
+        %div{:style => "width: 800px;"}
+        #basic_map{:style => "width: 800px; height: 400px;"}
 
-%h2 Details about #{@protest.title}
+      %p
+      .right-side{:style => "width:30%;"}
+        = link_to 'Edit', edit_protest_path(@protest)
+        = button_to 'Delete', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
+        = link_to 'Back to protest list', protests_path
+        %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
+        %p
+          Real time news feed from Twitter here.
+        %p
+    %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}
+    %img#profile-pic{:src => "https:"}/
 
-%ul#details
-  %li
-    Protest Location:
-    = @protest.location
-  %li
-    Happening on:
-    = @protest.event_date.strftime("%B %d, %Y")
 
-%h3 Description:
 
-%p#description= @protest.description
-
-= link_to 'Edit', edit_protest_path(@protest)
-= button_to 'Delete', protest_path(@protest), :method => :delete, :confirm => 'Are you sure?'
-= link_to 'Back to protest list', protests_path

@@ -1,14 +1,41 @@
-// -#  This file is app/views/protests/index.html.haml
-%h1 All Protests
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Know Your Rights
+    %link{:href => "index.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #tfheader
+      %h1 Know Your Rights
+      %form#tfnewsearch{:action => "http://www.google.com", :method => "get"}
+        %input.tftextinput{:maxlength => "120", :name => "q", :size => "21", :type => "text"}/
+        %input.tfbutton{:type => "submit", :value => "search"}/
+      .tfclear
+    %h2 Find Protests
+    #menu
+      %p
+        %b Sort by:
+      %ul
+        %li
+          %a{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
+        %li
+          %a{:class => @title_header}= link_to 'Event Description', protests_path(:sort => 'description'), :id => 'description_header'
+        %li
+          %a{:class => @title_header}= link_to 'Event Date and Time', protests_path(:sort => 'event_date'), :id => 'event_date_header'
+        %li
+          %a{:class => @title_header}= link_to 'Event Location', protests_path(:sort => 'location'), :id => 'location_header'
 
-%table#protests
+-if user_signed_in?
+  = link_to 'Add new protest', new_protest_path
+
+%table#protests{:border => 1, :width => "80%"}
   %thead
     %tr
       // %th{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
       %th Title
       %th Description
       %th Location
-      %th Date
+      %th Date and Time
       // %th{:class => @date_header}= link_to 'Event Date', protests_path(:sort => 'event_date'), :id => 'event_date_header'
       %th More Info
   %tbody
@@ -20,4 +47,5 @@
         %td= protest.event_date
         %td= link_to "More about #{protest.title}", protest_path(protest)
 
-= link_to 'Add new protest', new_protest_path
+   
+    // %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}

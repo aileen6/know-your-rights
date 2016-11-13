@@ -1,0 +1,95 @@
+body{
+	font-family: "Verdana";
+	background-color: #ececec;
+	color: gray;
+}
+
+h1{
+	color: white;
+	background-color: purple;
+	font-size:40px;
+	padding: 10px 20px 0px 20px;
+	font-family: "Verdana";
+
+}
+
+
+h2{
+	color: white;
+	font-family: "Verdana";
+	background-color: #a68ed4;
+	margin : 0px ;
+	margin-top: 25px
+	padding: 15px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a {
+	color: black;
+
+}
+
+#profile-pic {
+	max-width: 90px;
+	margin : 10px ;
+
+}
+
+
+#tfheader{
+			background-color: purple;
+		}
+		#tfnewsearch{
+			float:right;
+			padding:10px;
+			padding-top: 1px;
+		}
+		.tftextinput{
+			margin: 0;
+			padding: 5px 25px;
+			font-family: Arial;
+			font-size:14px;
+			border:1px solid purple; border-right:0px;
+			
+		}
+		.tfbutton {
+			margin: 0;
+			padding: 5px 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:14px;
+			color: white;
+			border: solid 2px black;
+			background: #8565c4
+			
+		}
+		.tfbutton:hover {
+			background: #8565c4
+		}
+		
+		.tfclear{
+			clear:both;
+		}
+
+
+#menu {
+	color: black;
+	float: left;
+	padding-left: 64px
+
+}
+
+.left-side {
+	float: left;
+}
+
+.right-side {
+	float: right;
+	border: solid 1px black;
+	padding-left: -15px;
+	padding-right: -28px;
+}
+
+
+
