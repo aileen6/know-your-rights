@@ -20,7 +20,7 @@ h2{
 	font-family: "Verdana";
 	background-color: #a68ed4;
 	margin : 0px ;
-	margin-top: 25px
+	margin-top: 25px;
 	padding: 15px;
 	padding-left: 20px;
 	padding-top: 10px;
@@ -72,6 +72,11 @@ a {
 		.tfclear{
 			clear:both;
 		}
+form {
+	color:black;
+	padding-top: 20px;
+	
+}
 
 
 #menu {
@@ -84,19 +89,22 @@ a {
 
 table {
 	color: black ;
-	padding:0 80px 0 80px;
+	padding: 10px;
+
 }
 
 p {
 	padding-bottom: -10px;
 }
 
-td {
-	padding:0 10px ;	
+
+
+
+#top-layer {
+    display:inline; 
 }
 
-thead {
-	size: 100px;
-	
+#bottom-layer { 
+	 display: inline;
 }
 
