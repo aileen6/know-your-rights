@@ -2,6 +2,10 @@ class ProtestsController < ApplicationController
 
   before_filter :authenticate_user!, except: [ :index, :show ]
 
+  def googleVerify
+    render "googleVerify"
+  end
+
   def show
     id = params[:id] # retrieve movie ID from URI route
     @protest = Protest.find(id) # look up protest by unique ID
