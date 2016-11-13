@@ -26,7 +26,7 @@
     #menu
       %p
         %b Sort by:
-      %ul
+      %ul{:style => "margin:20px"}
         %li
           %a{:class => @title_header}= link_to 'Event Title', protests_path(:sort => 'title'), :id => 'title_header'
         %li
