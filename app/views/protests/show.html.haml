@@ -31,7 +31,7 @@
 
 
 %head
-  %script{:src => "//maps.google.com/maps/api/js?v=AIzaSyDHDuR9mVRJ9RdnfALd3tISh7aWSfRxfBE"}
+  %script{:src => "//maps.google.com/maps/api/js?key=AIzaSyDHDuR9mVRJ9RdnfALd3tISh7aWSfRxfBE"}
   %script{:src => "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"}
   %script{:src => "//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js", :type => "text/javascript"}
   :javascript
@@ -62,10 +62,8 @@
   %h2{:style => "padding:5px; font-size:18px; color:black"} #The Cause
   %p
     Real time news feed from Twitter here.
-  %p
-  %p Want to know more about your rights? Get details at
   %div
-  %marquee{:bgcolor => "#ffffff", :direction => "up", :loop => "-1", :onmouseout => "this.scrollAmount=2", :onmouseover => "this.scrollAmount=0", :scrollamount => "2", :width => "30%"}
+  %marquee{:bgcolor => "#ffffff", :direction => "up", :loop => "-1", :onmouseout => "this.scrollAmount=2", :onmouseover => "this.scrollAmount=0", :scrollamount => "2", :width => "50%"}
     %center
       %font{:color => "#000000", :size => "+1"} SCROLLING TEXT
       %p
@@ -80,6 +78,7 @@
         %font{:color => "#000000", :size => "+1"} STAND OUT
       %p
         %font{:color => "#000000", :size => "+1"} FROM THE REST!
+  %p Want to know more about your rights? Get details at      
   %link{:href => "https://www.aclunc.org/our-work/know-your-rights/free-speech-protests-demonstrations"}/
   %div{:style => "width:150px; height:150px; line-height:3em; overflow:auto; padding:5px;"}
  
