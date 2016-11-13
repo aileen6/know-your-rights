@@ -3,10 +3,16 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 require 'dotenv'
 require 'yaml'
+Dotenv.load
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+require 'dotenv/tasks'
+
+task :mytask => :dotenv do
+    # things that require .env
+end
 
 module Workspace
   class Application < Rails::Application
@@ -24,6 +30,8 @@ module Workspace
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    
+    
     
     $client = Twitter::REST::Client.new do |config|
       config.consumer_key        = ENV['TWITTER_API_KEY']
