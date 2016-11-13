@@ -19,7 +19,7 @@ h2{
 	color: white;
 	font-family: "Verdana";
 	background-color: #a68ed4;
-	margin : 0px ;
+	margin: 0px;
 	margin-top: 25px;
 	padding: 15px;
 	padding-left: 20px;
@@ -97,14 +97,14 @@ p {
 	padding-bottom: -10px;
 }
 
-
-
-
 #top-layer {
-    display:inline; 
+    float:left; 
 }
 
 #bottom-layer { 
-	 display: inline;
+	 float:left; 
 }
 
+li {
+	display: inline;
+}
